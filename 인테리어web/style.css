@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+:root {
+  --bg-contain: no-repeat 50% / contain;
+  --bg-cover: no-repeat 50% / cover;
+  --color-beige: rgb(170, 153, 112);
+  --color-green: rgb(10, 89, 10);
+}
+
+html {
+  font-family: "Exo 2", "Noto Sans KR", "Open Sans", Dotum, "돋움", Helvetica,
+    "Apple SD Gothic Neo", sans-serif;
+
+  font-family: "Exo 2", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+img {
+  vertical-align: top;
+}
+
+/*********** header *********/
+header {
+  width: 80%;
+  height: 14vh;
+  margin: 0 auto 1vh;
+  /* background-color: orange; */
+
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 40% 50% 5% 5%);
+}
+/* 아이콘 */
+header h1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+header h1 a {
+  height: 7h;
+  margin-right: auto;
+}
+
+/* register */
+header #register {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  grid-row: 1/2;
+  grid-column: 2/5;
+  margin-left: auto;
+}
+header #register li {
+  margin-right: 10px;
+}
+header #register li a {
+  font-size: 0.8em;
+  color: #fff;
+  background-color: var(--color-beige);
+  width: 70px;
+  padding: 3px;
+}
+header #register li:nth-child(2) a {
+  background-color: var(--color-green);
+}
+
+/* menu */
+header #menu {
+  display: flex;
+  justify-content: center;
+
+  grid-row: 2/3;
+  grid-column: 2/5;
+}
+header #menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+header #menu li a {
+}
+header #menu li:first-child a {
+  color: var(--color-beige);
+}
+header #menu li svg {
+  width: 10px;
+  margin: 0 10px;
+}
+
+/* search icon */
+header .search {
+  margin: 15px auto 0;
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+/* menu icon */
+header .menuBar {
+  margin: 15px auto 0;
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+/*********** main *********/
+
+/******** article1 layer ******/
+main .main_article1 {
+  background: url(./images/slider.jpg) var(--bg-cover);
+}
+main .main_article1 {
+}
+main .main_article1 {
+}
+
+/*********** header *********/
+/*********** header *********/
